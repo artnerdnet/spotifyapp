@@ -1,4 +1,6 @@
-### About the GAVAGAI API
+View live demo: https://artnerdnetgvg.netlify.com/
+
+# About the GAVAGAI API
 For an authenticated user, this method returns information about a term in the Gavagai Real Time lexicon (semantically similar words, left and right side neighbours, associations, string similar words, words starting with input word, words ending with input word and n grams with input word, as well as frequency and rank information):
 
 - BaseUrl: https://api.gavagai.se/v3
