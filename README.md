@@ -25,6 +25,17 @@ REACT_APP_GAVAGAI_SIMILAR_WORDS=additionalFields=SEMANTICALLY_SIMILAR_WORDS
 ### Language config file
 If you want to change strings or add translations please do so in the `/src/asses/config.json`
 
+## Next steps
+- Create a loading animation for when results and information are being fetched 
+- Improve the UI of the Display view
+- Add format to the ellipsis so people know they can click it in order to open it and/or implement a tooltip
+- Separate the functions from the App component
+- Create tests
+
+# Credits
+- [Gavagai](https://developer.gavagai.io/docs)
+- Designed and coded by [Art Nerd Net](http://www.artnerd.net)
+- [Photo by Annie Spratt on Unsplash](https://unsplash.com/@anniespratt)
 
 # Create React App instructions
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -65,4 +76,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
