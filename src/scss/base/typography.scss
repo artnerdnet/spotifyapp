@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Righteous&display=swap');
+
+// Font families
+$base-font-family: 'Righteous', cursive;
+$base-line-height: 24px;
+$secondary-font-family: 'Lexend Deca', sans-serif;
+$ms-base: 1em;
+
+$font-sizing: (
+  'fontSize-xxs': (
+    'size': calc(12px + (13 - 12) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-xs': (
+    'size': calc(14px + (16 - 14) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-s': (
+    'size': calc(16px + (18 - 16) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-m': (
+    'size': calc(18px + (20 - 18) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-l': (
+    'size': calc(20px + (22 - 20) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-xl': (
+    'size': calc(30px + (32 - 30) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-xxl': (
+    'size': calc(32px + (34 - 32) * ((100vw - 300px) / (1980 - 300))),
+  ),
+  'fontSize-giant': (
+    'size': calc(64px + (68 - 64) * ((100vw - 300px) / (1980 - 300))),
+  ),
+);
+
+$fontSize-xxs: map-get(map-get($font-sizing, fontSize-xxs), size);
+$fontSize-xs: map-get(map-get($font-sizing, fontSize-xs), size);
+$fontSize-s: map-get(map-get($font-sizing, fontSize-s), size);
+$fontSize-m: map-get(map-get($font-sizing, fontSize-m), size);
+$fontSize-l: map-get(map-get($font-sizing, fontSize-l), size);
+$fontSize-xl: map-get(map-get($font-sizing, fontSize-xl), size);
+$fontSize-xxl: map-get(map-get($font-sizing, fontSize-xxl), size);
+$fontSize-giant: map-get(map-get($font-sizing, fontSize-giant), size);
+
+body {
+  font-family: $base-font-family;
+  font-size: $fontSize-m;
+  font-style: normal;
+  p {
+    font-size: $fontSize-m
+  }
+  h1, h2, h3, h4, h5 {
+    text-transform: capitalize;
+    font-family: $secondary-font-family
+  }
+  h1 {
+    font-size: $fontSize-xxl;
+    text-transform: uppercase
+  }
+  h2 {
+    font-size: $fontSize-xl
+  }
+  h3 {
+    font-size: $fontSize-l
+  }
+  h4 {
+    font-size: $fontSize-m
+  }
+  h5 {
+    font-size: $fontSize-xs
+  }
+  h6 {
+    font-size: $fontSize-xxs
+  }
+  a {
+    text-decoration: none
+  }
+  a:hover {
+    text-decoration: underline
+  }
+}

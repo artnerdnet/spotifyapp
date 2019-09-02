@@ -1,0 +1,16 @@
+@import './base/buttons';
+@import './base/colors';
+@import './base/typography';
+@import './pages/details';
+@import './pages/results';
+@import './pages/search';
+@import './helpers/variables';
+
+body,html {
+    margin: 0;
+    font-size: $fontSize-l;
+    font-family: p22-underground, sans-serif;
+    background-image: url('../assets/bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

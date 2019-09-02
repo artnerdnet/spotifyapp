@@ -1,0 +1,17 @@
+.no-display {
+  display: none
+}
+
+.centered {
+  justify-content: center;
+  align-content: center;
+}
+
+.no-ellipsis {
+  text-overflow: initial
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

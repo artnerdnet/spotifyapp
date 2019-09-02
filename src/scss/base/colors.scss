@@ -1,0 +1,17 @@
+$palette: (
+    'base': (
+        'primary': #7A52F7, 
+        'secondary': #FA945F
+    ),
+    'monochrome': (
+        'light': #ffffff,
+        'dark': #000000,
+        'base': #D6D6D6
+    )
+);
+
+$palette-primary: map-get(map-get($palette, base), primary);
+$palette-secondary: map-get(map-get($palette, base), secondary);
+$palette-white: map-get(map-get($palette, monochrome), light);
+$palette-black: map-get(map-get($palette, monochrome), dark);
+$palette-grey: map-get(map-get($palette, monochrome), base);

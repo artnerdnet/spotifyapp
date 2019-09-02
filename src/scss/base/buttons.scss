@@ -1,0 +1,29 @@
+@import './base/colors';
+
+.btn {
+  color: $palette-white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1em;
+  width: fit-content;
+}
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+.btn-primary {
+  @include button-bg($palette-primary);
+}
+
+.btn-secondary {
+  @include button-bg($palette-secondary);
+}
