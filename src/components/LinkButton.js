@@ -11,13 +11,15 @@ const LinkButton = (props) => {
     match,
     staticContext,
     to,
+    id,
     onClick,
     key,
     className,
     ...rest
   } = props
   return (
-    <button
+    <li
+      id={props.id}
       className={props.className}
       {...rest}
       onClick={(event) => {

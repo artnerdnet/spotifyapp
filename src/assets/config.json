@@ -1,16 +1,12 @@
 {
-    "en": {
-        "details": "Details",
-        "formMessage": "Please fill all the fields and try again",
-        "homeHeader": "Search for a word",
-        "language": "English",
-        "loading": "Loading...",
-        "locale": "en",
-        "previousResults": "Previous Results",
-        "resultsHeader": "Here are your results",
-        "search": "Search",
-        "searchAgain": "Search again",
-        "searchPlaceholder": "Type a word",
-        "searchHeader": "What word are you looking for?"
+    "es": {
+        "homeHeader": "Alimenta tus oídos",
+        "language": "Español",
+        "loading": "Cargando...",
+        "locale": "es",
+        "goBack": "Volver atrás",
+        "goToPlaylist": "Ir a la lista",
+        "playlistsHeader": "¡Que suene la música!",
+        "chooseCategory": "Elige una de las Categorías"
     }
 }

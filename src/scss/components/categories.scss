@@ -1,0 +1,42 @@
+@import '../base/animations';
+
+.categories-page {
+  align-items: center;
+  background-image: url('../../assets/bg-image.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+
+  .categories-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    text-align: center;
+    padding-top: 8vh;
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      list-style-type: none;
+      list-style: none;
+
+      li {
+        margin: 8px 2px;
+        width: 15vw;
+
+        img {
+          width: 8vw;
+          border-radius: 24%;
+
+          &:hover {
+            animation: $shake-animation;
+            animation-iteration-count: $shake-animation-iteration;
+          }
+        }
+      }
+    }
+  }
+}

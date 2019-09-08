@@ -1,8 +1,8 @@
 {
-  "name": "gavagaiapp",
+  "name": "spotifyapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artnerdnetgvg.netlify.com",
+  "homepage": "https://.netlify.com",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.9.0",

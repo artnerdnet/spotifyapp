@@ -1,0 +1,50 @@
+.playlists-detail-page {
+  background-image: url('../../assets/bg-image.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .playlists-detail-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    overflow: auto;
+    text-align: center;
+
+    .playlists-details-wrapper {
+      display: flex;
+      justify-content: center;
+
+      table {
+        display: table;
+        width: 90%;
+        border-collapse: collapse;
+        margin: 18px;
+
+        a.playlists-link {
+          color: $palette-secondary;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $palette-primary;
+          }
+
+        }
+
+        tr {
+          border-bottom: solid 2px $palette-secondary;
+          text-align: center;
+
+          td {
+            padding: 24px
+          }
+        }
+
+        img.playlist-cover-img {
+          border-radius: 8%;
+          width: 12vw
+        }
+      }
+    }
+  }
+}

@@ -1,16 +1,16 @@
 @import './base/buttons';
 @import './base/colors';
 @import './base/typography';
-@import './pages/details';
-@import './pages/results';
-@import './pages/search';
+@import './components/categories';
+@import './components/playlists';
 @import './helpers/variables';
+@import './base/animations.scss';
 
-body,html {
+body,
+html {
+    color: $palette-white;
     margin: 0;
     font-size: $fontSize-l;
-    font-family: p22-underground, sans-serif;
-    background-image: url('../assets/bg-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    list-style-type: none;
+    height: 100%;
 }

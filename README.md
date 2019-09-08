@@ -1,25 +1,23 @@
-### About the GAVAGAI API
-For an authenticated user, this method returns information about a term in the Gavagai Real Time lexicon (semantically similar words, left and right side neighbours, associations, string similar words, words starting with input word, words ending with input word and n grams with input word, as well as frequency and rank information):
+### About this app
+This app works with the Spotify API fetching all the categories and the top ten lists of the chosen category.
 
-- BaseUrl: https://api.gavagai.se/v3
-- Endpoint: GET /lexicon/{language}/{word}
-- Parameters (see API definition image attached for more info):
-- apiKey (required)
-- language (required)
-- word (required)
-- additionalFields: SEMANTICALLY_SIMILAR_WORDS
-- Output (only the ones of relevance):
-- semanticallySimilarWords : contains the words that in the given language have similar meaning to the word in input.
-- wordInformation : informations about the word, such as its frequency of occurrence.
-
+### How to set it up
+To make this App work you need to:
+1. create an account at the [Developers Spotify website](https://developer.spotify.com/dashboard/login)
+2. In the dashboard, create a new app in Javascript language
+3. Add the redirect URIs (in case of running locally: localhost:3000)
+4. In the dashboard you will find your Client ID to replace in the .env file (see next section for specs)
 
 ### Parameters
-To change parameters, go to the .env file on the root of the project:
+To set the parameters, create or go to the .env file on the root of the project:
 
 ```
-REACT_APP_GAVAGAI_API_KEY=YOURGAVAGAIAPIKEY
-REACT_APP_GAVAGAI_URI=https://api.gavagai.se/v3/lexicon
-REACT_APP_GAVAGAI_SIMILAR_WORDS=additionalFields=SEMANTICALLY_SIMILAR_WORDS
+REACT_APP_SPOTIFY_URI=https://api.spotify.com/v1
+REACT_APP_ENDPOINT_CATEGORIES=browse/categories
+REACT_APP_ENDPOINT_PLAYLISTS=playlists
+REACT_APP_SPOTIFY_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXX
+REACT_APP_SPOTIFY_AUTHORIZE_URI=https://accounts.spotify.com/authorize
+REACT_APP_REDIRECT_URI=http://localhost:3000/
 ```
 
 ### Language config file
