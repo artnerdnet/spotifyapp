@@ -23,6 +23,9 @@ REACT_APP_REDIRECT_URI=http://localhost:3000/
 ### Language config file
 If you want to change strings or add translations please do so in the `/src/asses/config.json`
 
+# Next Steps
+- Adjust responsiveness
+- Add accessibility
 
 # Create React App instructions
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
