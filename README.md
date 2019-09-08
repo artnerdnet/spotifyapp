@@ -1,3 +1,7 @@
+# Live Version: https://artnerdnetspotifyapp.netlify.com
+
+![alt text](http://artnerd.net/imgs/code-gallery/spotifyapp.png)
+
 # About this app
 This app works with the Spotify API fetching all the categories and the top ten lists of the chosen category.
 
