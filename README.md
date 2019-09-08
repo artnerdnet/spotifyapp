@@ -1,7 +1,7 @@
-### About this app
+# About this app
 This app works with the Spotify API fetching all the categories and the top ten lists of the chosen category.
 
-### How to set it up
+## How to set it up
 To make this App work you need to:
 1. create an account at the [Developers Spotify website](https://developer.spotify.com/dashboard/login)
 2. In the dashboard, create a new app in Javascript language
